@@ -60,7 +60,7 @@ jobs:
           ./python
           ./python-framework
           ~/Library/Python/${{ env.manual-python-version }}
-        key: macos-python-${{ env.manual-python-version-full }}
+        key: macos-python-${{ env.manual-python-version-full }}-2
     - name: Download Python (macOS, cache miss)
       if: ${{ runner.os == 'macOS' && !steps.caching.outputs.cache-hit }}
       run: |
